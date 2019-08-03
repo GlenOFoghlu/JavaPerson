@@ -12,13 +12,13 @@ public class PersonFunction {
 		temp = p1DOB.split("/");
 		temp2 = p2DOB.split("/");
 
-		int day1 = Integer.parseInt(temp[0]);	
-		int month1 = Integer.parseInt(temp[1]);	
-		int year1 = Integer.parseInt(temp[2]);
+		int d1 = Integer.parseInt(temp[0]);	
+		int m1 = Integer.parseInt(temp[1]);	
+		int y1 = Integer.parseInt(temp[2]);
 		
-		int day2 = Integer.parseInt(temp2[0]);	
-		int month2 = Integer.parseInt(temp2[1]);	
-		int year2 = Integer.parseInt(temp2[2]);
+		int d2 = Integer.parseInt(temp2[0]);	
+		int m2 = Integer.parseInt(temp2[1]);	
+		int y2 = Integer.parseInt(temp2[2]);
 		
 		Calendar c = Calendar.getInstance();
 		int yearNow=c.get(Calendar.YEAR);
@@ -31,9 +31,9 @@ public class PersonFunction {
 		
 		String exactAge;
 		
-		tempY=(year1-year2);
-		tempM=(month1-month2);
-		tempD=(day1-day2);
+		tempY=(y1-y2);
+		tempM=(m1-m2);
+		tempD=(d1-d2);
 		
 		return exactAge=tempY+" Years "+tempM+" Months "+tempD+" Days";	
 		
