@@ -9,9 +9,10 @@ public class Create {
 	     System.out.println("Area is " + s1.getArea());  // Run Rectangle's getArea()
 	     s1.drawMe();
 	      
-//	      Shape s2 = new Triangle("blue", 4, 5);  // Upcast
-//	      System.out.println(s2);  // Run Triangle's toString()
-//	      System.out.println("Area is " + s2.getArea());  // Run Triangle's getArea()
+	      Shape s2 = new Triangle("blue", 4, 5);  // Upcast
+	      System.out.println(s2);  // Run Triangle's toString()
+	      System.out.println("Area is " + s2.getArea());  // Run Triangle's getArea()
+	      s2.drawMe();
 	      
 //	      shape s3 = new Shape("green");
 //	      System.out.println(s3);
