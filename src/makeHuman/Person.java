@@ -1,4 +1,4 @@
-package thing;
+package makeHuman;
 
 public class Person {
 	
@@ -9,7 +9,7 @@ public class Person {
 	 public Person() {
 		   this.name = "Human";
 		   this.dob = "1/1/2000";
-		   this.gender = "Male";
+		   this.gender = "Undefined";
 		}
 	 
 	 public Person(String name, String dob, String gender) {
@@ -17,8 +17,7 @@ public class Person {
 		   this.dob = dob;
 		   this.gender = gender;
 	 }
-	 
-	 
+	  
 	  public String getName() {
 	    return name;
 	  }

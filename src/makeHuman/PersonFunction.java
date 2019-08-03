@@ -1,10 +1,10 @@
-package thing;
+package makeHuman;
 
 import java.util.Calendar;
 
 public class PersonFunction {
 	
-	public static String compare(String p1DOB, String p2DOB)
+	public static String compareDOB(String p1DOB, String p2DOB)
 	{
 		String[] temp;
 		String[] temp2 = null;
@@ -31,12 +31,6 @@ public class PersonFunction {
 		
 		String exactAge;
 		
-		/*
-		tempY=(yearNow-year);
-		tempM=(monthNow-month);
-		tempD=(dayNow-day);
-		*/
-		
 		tempY=(year1-year2);
 		tempM=(month1-month2);
 		tempD=(day1-day2);
@@ -44,5 +38,15 @@ public class PersonFunction {
 		return exactAge=tempY+" Years "+tempM+" Months "+tempD+" Days";	
 		
 	}
+	public static boolean compare(String part1, String part2)
+	{
+		Boolean c;
+		
+		c = part1.equals(part2);		
+		
+		return c;
+		
+	}
+	
 
 }
