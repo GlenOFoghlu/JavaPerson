@@ -1,15 +1,12 @@
 package shapeshifters;
 
-
-
-	
 public class Circle extends Shape {
 	
 		   // Private member variables
 		   private int radius;
 		   
 		   // Constructor
-		   public Circle(String color, int width) {
+		   public Circle(String color, int radius) {
 		      super(color);
 		      this.radius= radius;
 		   }
@@ -21,8 +18,9 @@ public class Circle extends Shape {
 
 		   @Override
 		   public double getArea() {
-			   double pi = 3.14;
-		      return  pi * radius * radius;
+			   double pi = Math.PI;
+			   double r2 = Math.pow(radius, 2);
+		      return  pi * r2;
 		   }
 
 		   @Override

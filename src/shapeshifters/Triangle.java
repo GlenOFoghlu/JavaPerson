@@ -1,7 +1,5 @@
 package shapeshifters;
 
-
-	
 public class Triangle extends Shape {
 	
 		   // Private member variables
@@ -56,6 +54,7 @@ public class Triangle extends Shape {
 		        for (i = 0; i <h; i++) { 
 		            System.out.print("*"); 
 		        } 
+		        System.out.println("");
 		      
 		   }
 }

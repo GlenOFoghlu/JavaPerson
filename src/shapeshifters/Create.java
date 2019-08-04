@@ -14,7 +14,7 @@ public class Create {
 	      System.out.println("Area is " + s2.getArea());  // Run Triangle's getArea()
 	      s2.drawMe();
 	      
-	      Shape s3 = new Circle("Green", 5);  // Upcast
+	      Shape s3 = new Circle("Green", 6);  // Upcast
 	      System.out.println(s3);  // Run Triangle's toString()
 	      System.out.println("Area is " + s3.getArea());  // Run Triangle's getArea()
 	      s3.drawMe();
