@@ -29,31 +29,32 @@ public class Triangle extends Shape {
 		   public void drawMe() {
 
 			   int i, j,k = 0; 
-			   int n =base;
-			   //int k = 0;//height;
-		        for (i = 1; i <= n; i++) 
+			   int b = base;
+			   int h = height;
+		        for (i = 1; i <= b; i++) 
 		        { 
 		            // Print spaces 
-		            for (j = i; j < n; j++) { 
+		            for (j = i; j < b; j++) { 
 		                System.out.print(" "); 
 		            } 
 		            // Print # 
 		            while (k != (2 * i - 1)) { 
 		                if (k == 0 || k == 2 * i - 2) 
 		                    System.out.print("*"); 
+//		                    //System.out.print(k); 
+//		                if(k%2==0)
+//		                	System.out.print("~"); 
 		                else
 		                    System.out.print(" "); 
 		                k++; 
 		                ; 
 		            } 
 		            k = 0; 
-		              
-		            // print next row 
+
 		            System.out.println();  
 		        } 
-		        // print last row 
-		        for (i = 0; i < 2 * n - 1; i++) { 
-		            System.out.print("#"); 
+		        for (i = 0; i <h; i++) { 
+		            System.out.print("*"); 
 		        } 
 		      
 		   }
